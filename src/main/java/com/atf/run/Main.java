@@ -19,23 +19,15 @@ public class Main {
         MyInterface init = new DriverTest();
         init.InitEnvironment();
         //执行用例
-//        List<ExcelDate> list = ConnectExcel.getExcelData();
-//        for (int i = 0; i < list.size(); i++) {
-//            ExcelDate data = list.get(i);
-//            if (data.getFlag() != true) {
-//                init.workFlow(data);
-//            } else {
-//                init.writeResult(data.getSheetNumber());
-//            }
-//        }
-
-        /**
-         * 测试用
-         */
-
-        Testcase testcase =new Testcase();
-
-            testcase.do8();
+        List<ExcelDate> list = ConnectExcel.getExcelData();
+        for (int i = 0; i < list.size(); i++) {
+            ExcelDate data = list.get(i);
+            if (data.getFlag() != true) {
+                init.workFlow(data);
+            } else {
+                init.writeResult(data.getSheetNumber());
+            }
+        }
 
 
 
