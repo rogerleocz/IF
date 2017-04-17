@@ -1,11 +1,9 @@
 package com.atf.run;
 
 import com.atf.Interface.MyInterface;
-//import com.atf.pageElement.ConnectExcel;
+import com.atf.pageElement.ConnectExcel;
 import com.atf.pageElement.DriverTest;
 import com.atf.pageElement.ExcelDate;
-import com.atf.testCase.Testcase;
-import junit.framework.TestCase;
 import org.apache.xpath.operations.String;
 
 import java.util.List;
